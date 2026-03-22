@@ -6,7 +6,7 @@ CLI tool that fetches the full transaction history of a Bitcoin address and calc
 
 - Fetches all transactions for a given Bitcoin address via blockchain.info
 - Calculates net BTC flow per transaction (received minus sent), ignoring zero-net entries
-- Retrieves historical BTC/EUR price at the date of each transaction via CoinDesk API
+- Retrieves historical BTC/EUR price at the date of each transaction via CoinGecko API
 - Falls back to current BTC price when historical data is unavailable
 - Calculates transaction fees in BTC (inputs minus outputs)
 - Displays current wallet balance and EUR value using the live BTC/EUR price from blockchain.com
@@ -18,7 +18,7 @@ CLI tool that fetches the full transaction history of a Bitcoin address and calc
 |-----------|--------|
 | Language | Python 3 |
 | Blockchain data | blockchain.info REST API (free, no key) |
-| Historical prices | CoinDesk BPI API (free, no key) |
+| Historical prices | CoinGecko API (free, no key) |
 | Live BTC/EUR price | blockchain.com Exchange API (free, no key) |
 | HTTP client | requests |
 

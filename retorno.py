@@ -43,12 +43,12 @@ def calculate_transaction_fee(tx):
 
 def get_historical_price(timestamp):
     try:
-        date = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
-        url = "https://api.coindesk.com/v1/bpi/historical/close.json"
-        response = requests.get(url, params={"start": date, "end": date})
+        date_str = datetime.fromtimestamp(timestamp).strftime('%d-%m-%Y')
+        url = f"https://api.coingecko.com/api/v3/coins/bitcoin/history?date={date_str}"
+        response = requests.get(url)
         response.raise_for_status()
         data = response.json()
-        return data['bpi'].get(date)
+        return data['market_data']['current_price'].get('eur')
     except Exception as e:
         return None
 
