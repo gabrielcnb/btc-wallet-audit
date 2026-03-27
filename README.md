@@ -50,22 +50,22 @@ python retorno.py
 Example output:
 
 ```
-Consultando transações para o endereço: bc1q...
-Conectando à API da Blockchain.info...
+Fetching transactions for address: bc1q...
+Connecting to Blockchain.info API...
 
-Histórico de Transações:
+Transaction History:
 --------------------------------------------------------------------------------
-Data: 2023-04-12
+Date: 2023-04-12
 Hash: a1b2c3d4...
-Quantidade BTC: 0.00250000
-Valor na época: 68.42 EUR
-Taxa: 0.00001200 BTC
+Amount BTC: 0.00250000
+Value at time: 68.42 EUR
+Fee: 0.00001200 BTC
 --------------------------------------------------------------------------------
 
-Valores Atuais:
-Saldo BTC: 0.00250000
-Preço atual do Bitcoin: 58320.00 EUR
-Valor atual da carteira: 145.80 EUR
+Current Values:
+BTC Balance: 0.00250000
+Current Bitcoin price: 58320.00 EUR
+Current wallet value: 145.80 EUR
 ```
 
 ## File Structure
